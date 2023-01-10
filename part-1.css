@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(184, 91%, 17%);
+    --clr-primary-2: hsl(185, 84%, 25%);
+    --clr-primary-3: hsl(185, 81%, 29%);
+    --clr-primary-4: hsl(184, 77%, 34%);
+
+    /* primary/main color */
+    --clr-primary-5: hsl(185, 62%, 45%);
+
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(185, 57%, 50%);
+    --clr-primary-7: hsl(184, 65%, 59%);
+    --clr-primary-8: hsl(184, 80%, 74%);
+    --clr-primary-9: hsl(185, 94%, 87%);
+    --clr-primary-10: hsl(186, 100%, 94%);
+
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+
+    --ff-primary: "Lato", sans-serif;
+
+    /* --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+  }
+
+  .hero{
+    background: linear-gradient(rgba(50, 206, 209, 0.671), rgba(0, 0, 0, 0.849)), url(./Resources/images/main.jpeg) no-repeat center/cover scroll;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+
+    /* following are the flex properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--ff-primary);
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 95px;
+
+    width: 80%;
+    max-width: 1200px;
+  /* why did i include above two props? */
+  /* watch thisvideo : https://youtu.be/Ew6VYIziGSw */
+
+    margin-bottom: 30px;
+    padding-top: 75px;
+  }
+
+  .hero p{
+    color: white;
+    font-family: var(--ff-primary);
+    letter-spacing: 3px;
+    line-height: 35px;
+    text-align: center;
+
+    width: 60%;
+    max-width: 650px;
+  /* why did i include above two props? */
+  /* watch thisvideo : https://youtu.be/Ew6VYIziGSw */
+
+    margin-bottom: 50px;
+  }
+
+  .hero a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--ff-primary);
+    letter-spacing: 4.3px;
+    border: 2px white solid;
+    display: block;
+    width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 14px 12px;
+
+    transition: all 0.5s 0s;
+  }
+
+/* end of styling */
+
+
+
+/* transition starts */
+
+.hero a:hover{
+    background: white;
+    color: var(--clr-primary-5);
+}
+
+/* transition ends */
+
+
+
+
+
+
+/* media query starts */
+
+@media screen and (min-width:600px){
+
+    .hero h1{
+      font-size: 70px;
+    }
+
+}
+
+/* media query end */

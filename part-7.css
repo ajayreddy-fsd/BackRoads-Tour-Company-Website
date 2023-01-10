@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(184, 91%, 17%);
+    --clr-primary-2: hsl(185, 84%, 25%);
+    --clr-primary-3: hsl(185, 81%, 29%);
+    --clr-primary-4: hsl(184, 77%, 34%);
+
+    /* primary/main color */
+    --clr-primary-5: hsl(185, 62%, 45%);
+
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(185, 57%, 50%);
+    --clr-primary-7: hsl(184, 65%, 59%);
+    --clr-primary-8: hsl(184, 80%, 74%);
+    --clr-primary-9: hsl(185, 94%, 87%);
+    --clr-primary-10: hsl(186, 100%, 94%);
+
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+
+    --ff-primary: "Lato", sans-serif;
+
+/* --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.end{
+    background: rgb(34, 34, 34);
+    width: 100vw;
+    height: 65vh;
+
+    padding: 0px 30px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+    box-sizing: border-box;
+}
+
+.end .navigation a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--ff-primary);
+    letter-spacing: 4.5px;
+
+    transition: all 0.5s 0s;
+}
+
+.end .social-media a{
+    color: white;
+    font-size: 30px;
+
+    display: inline-block;
+    /* why?, as a-tags are indigeniously inline and don't obey margins/paddings on top/bottom, so I converted them to inline-block, so that they will obey my orders */
+
+    margin: 30px 10px;
+
+    transition: all 0.5s 0s;
+}
+
+.end .copyrights{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--ff-primary);
+    letter-spacing: 4.5px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 20px;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* why?, coverted this entire part to fit at center vertically */
+}
+
+.end .nav-links-set{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* the above is only for navigation-links-set, which shd be placed row-wise */
+}
+
+.end .nav-links-set a{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* why?, to separate nav-links from each other & create spacing */
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.end a:hover{
+    color: var(--clr-primary-7);
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:550px){
+
+    .end{
+        height: 55vh;
+    }
+
+}
+
+/* media queries end */

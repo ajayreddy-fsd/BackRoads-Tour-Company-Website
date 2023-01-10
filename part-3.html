@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part-3</title>
+
+    <link rel="stylesheet" href="./part-3.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+
+<!-- in the following code, each of the three services are placed in a separate div [named "service-1, 2, 3"] & all those divs are placed in a container div named "services-container". why? to use flex & orient them -->
+
+<!-- also the font-awesome icons are placed in their own div named "i-div", for the same reason of orienting them -->
+
+<!-- and within each service-1, service-2, service-3; there are two divs named "i-div" & "service-$-info" -->
+
+<!-- why again separate div by name "service-$-info" ?
+because as the viewport-width increases, "service-$" flex-direc will be row-wise, but "service-$-info" flex-direc will be col-wise -->
+
+
+    <div class="services">
+        <h1>our <span>services</span></h1>
+
+        <div class="services-container">
+    
+
+            <div class="service-1">
+                <div class="i-div">
+                    <i class="fas fa-wallet"></i>
+                </div>
+
+                <div class="service-1-info">
+                    <h2>saving money</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, quidem!</p> 
+                </div>       
+            </div>
+    
+
+            <div class="service-2">
+                <div class="i-div">
+                    <i class="fas fa-tree"></i>
+                </div>
+
+                <div class="service-2-info">
+                    <h2>endless hiking</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, quidem!</p>
+                </div>
+            </div>
+    
+
+            <div class="service-3">
+                <div class="i-div">
+                    <i class="fas fa-socks"></i>
+                </div>
+
+                <div class="service-3-info">
+                    <h2>amazing comfort</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, totam.</p>    
+                </div>
+
+            </div>
+    
+
+        </div>
+    
+    </div>
+
+    <script src="https://kit.fontawesome.com/35a120d2fb.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

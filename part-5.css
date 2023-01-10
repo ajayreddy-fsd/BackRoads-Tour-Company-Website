@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(184, 91%, 17%);
+    --clr-primary-2: hsl(185, 84%, 25%);
+    --clr-primary-3: hsl(185, 81%, 29%);
+    --clr-primary-4: hsl(184, 77%, 34%);
+
+    /* primary/main color */
+    --clr-primary-5: hsl(185, 62%, 45%);
+
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(185, 57%, 50%);
+    --clr-primary-7: hsl(184, 65%, 59%);
+    --clr-primary-8: hsl(184, 80%, 74%);
+    --clr-primary-9: hsl(185, 94%, 87%);
+    --clr-primary-10: hsl(186, 100%, 94%);
+
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+
+    --ff-primary: "Lato", sans-serif;
+
+/* --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.images h1{
+    font-family: var(--ff-primary);
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 9px;
+    margin-bottom: 33px;
+}
+
+.images span{
+    color: var(--clr-primary-7);
+}
+
+.images img{
+    width: 100%;
+
+    display: block;
+    /* why? there is a little-extra-space between the img & it's container, to eliminate that, i didi this */
+
+    transition: all 0.5s 0s;
+}
+
+.image-1, .image-2, .image-3, .image-4, .image-5, .image-6{
+    background: var(--clr-primary-7);
+
+    position: relative;
+}
+
+.images a{
+    color: white;
+    font-size: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* why above posiitoning? to place the FA-icon at the center of the image which means center the "image-$" container */
+
+    opacity: 0;
+    /* why? to hide the FA-icon, will unveil it when hovered */
+
+    transition: all 0.5s 0s;
+}
+
+.images{
+    text-align: center;
+    padding-top: 40px;
+    background: rgb(175,175,175);
+}
+
+/* styling end */
+
+
+
+
+
+
+
+/* transition starts */
+
+.image-1:hover img, 
+.image-2:hover img, 
+.image-3:hover img, 
+.image-4:hover img, 
+.image-5:hover img, 
+.image-6:hover img{
+    opacity: 0.5;
+}
+
+.image-1:hover a, 
+.image-2:hover a, 
+.image-3:hover a, 
+.image-4:hover a, 
+.image-5:hover a, 
+.image-6:hover a{
+    opacity: 1;
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:750px){
+
+    .images-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .image-1, 
+    .image-2, 
+    .image-3, 
+    .image-4, 
+    .image-5, 
+    .image-6{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+
+    .image-1, 
+    .image-2, 
+    .image-3, 
+    .image-4, 
+    .image-5, 
+    .image-6{
+        width: 25%;
+    }
+
+}
+
+/* media queries end */

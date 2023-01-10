@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(184, 91%, 17%);
+    --clr-primary-2: hsl(185, 84%, 25%);
+    --clr-primary-3: hsl(185, 81%, 29%);
+    --clr-primary-4: hsl(184, 77%, 34%);
+
+    /* primary/main color */
+    --clr-primary-5: hsl(185, 62%, 45%);
+
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(185, 57%, 50%);
+    --clr-primary-7: hsl(184, 65%, 59%);
+    --clr-primary-8: hsl(184, 80%, 74%);
+    --clr-primary-9: hsl(185, 94%, 87%);
+    --clr-primary-10: hsl(186, 100%, 94%);
+
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+
+    --ff-primary: "Lato", sans-serif;
+
+/* --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.services{
+    background: rgb(247,247,247);
+    /* the above property gives background color to the complete services div */
+
+    padding: 80px 20px;
+    padding-bottom: 110px;
+    box-sizing: border-box;
+}
+
+.services h1{
+    font-family: var(--ff-primary);
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 9px;
+    text-align: center;
+    box-sizing: border-box;
+
+    margin-bottom: 55px;
+}
+
+.services span{
+    color: var(--clr-primary-7);
+}
+
+.services h2{
+    font-family: var(--ff-primary);
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.services p{
+    text-align: center;
+    font-family: var(--ff-primary);
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.596);
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+
+    max-width: 220px;
+    /* why width was given, to control the no.of lines of the paragraph based on veiwport size */
+}
+
+.services i{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.services .i-div{
+    width: 55px;
+    height: 60px;
+    background: var(--clr-primary-7);
+    box-sizing: border-box;
+
+    /* the following flex-box is activated to place the font-awesome icons in the center of their container which is i-div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+/* the following code block, 
+is to align services-1, 2, 3 at center
+but flex-direction will be column */
+.services-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+/* the following code block, 
+is to align contents of service-1, 2, 3 at center
+but flex-direction will be column */
+.service-1, .service-2, .service-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin: 15px 0px;
+}
+
+
+/* styling is done */
+
+
+
+
+
+
+/* TODO No confusion, 
+TODO the following are the flex-directions of the ".services-container", "service-$", "service-$-info" for different media queries
+
+TODO        initially -> all are column
+TODO        @ 600px   -> row, column, column
+TODO        finally   -> row, row, column   */
+
+
+/* media queries start */
+
+@media screen and (min-width:600px){
+
+    .services-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        margin-right: 2%;
+        /* why?, due to heading-length differences, services do not appear to be at the center of the webpage, to nullify that, i adjsted margin-right to the container */
+    }
+
+    .service-1, .service-2{
+        flex-grow: 1;
+        /* why?, since in the above code-block, i have set justify-content to flex-start, by doing which i will be left with an empty space in the first row of the "services-container", to not make that happen, i activated flex-grow option */
+
+        /* why activated only service-1 & 2, why not service-3, because, if i activate that, then in the second-row of the container, there will be no space left, i do not want that, i want to service-3 to be at the flex-start position only leaving gap after it*/
+    }
+
+    .service-3{
+        flex-basis: 50%;
+        /* why? as said, i want service-3 to be in the flex-start position, leaving gap after it in the second row,  */
+
+        /* but 1&2 grow with viewport, 3 will not grow, so there will aligning problem, to counter that, i have set flex-basis to 50%, by doing this, the aligning problem was solved */
+
+    }
+
+}
+
+
+
+@media screen and (min-width:800px){
+    
+    .service-3{
+        flex: 1 0 auto;
+        /* why?, once view-port reaches this media query, i don't want to set service-3's flex-basis, becuase, this will make 3 fatter & 1,2 thinner */
+    }
+
+}
+
+
+
+@media screen and (min-width:1200px){
+
+    .service-1, .service-2, .service-3{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .service-1-info, .service-2-info, .service-3-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .i-div{
+        align-self: flex-start;
+        /* why above prop?, because i want the i-div container to start from starting of "service-$" */
+    }
+
+    .service-1-info, .service-2-info, .service-3-info{
+        margin-left: 15px;
+        /* why this prop?, to create gap b/w "service-$-info" and 'i-div' */
+    }
+
+    .services p{
+        max-width: 290px;
+        /* why this prop?, para was taking 3-lines, wanna restrict that to just 2-lines for a better look */
+        /* !also, middle-thig i.e., "endless-hiking" was entering second-row, to limit that, i decreased this valuue a bit */
+
+        text-align: left;
+        /* why this prop?, wanna align at the start of the flex, but align-self prop was not working */
+    }
+
+    .services-container{
+        margin-left: 2.3%;
+        /* why?, due to heading-length differences, services do not appear to be at the center of the webpage, to nullify that, i adjsted margin-right to the container */
+    }
+
+}
+
+/* media queries end */
+
+
+
+
+
+
+

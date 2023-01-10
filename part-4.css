@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(184, 91%, 17%);
+    --clr-primary-2: hsl(185, 84%, 25%);
+    --clr-primary-3: hsl(185, 81%, 29%);
+    --clr-primary-4: hsl(184, 77%, 34%);
+
+    /* primary/main color */
+    --clr-primary-5: hsl(185, 62%, 45%);
+
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(185, 57%, 50%);
+    --clr-primary-7: hsl(184, 65%, 59%);
+    --clr-primary-8: hsl(184, 80%, 74%);
+    --clr-primary-9: hsl(185, 94%, 87%);
+    --clr-primary-10: hsl(186, 100%, 94%);
+
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+
+    --ff-primary: "Lato", sans-serif;
+
+/* --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.tours h1{
+    font-family: var(--ff-primary);
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 9px;
+}
+
+.tours span{
+    color: var(--clr-primary-7);
+}
+
+/* the following is for tour-$'s date-div */
+.tours .tour-1-date{
+    background: url(./Resources/images/tour-1.jpeg) no-repeat center/cover scroll;
+    width: 85vw;
+    height: 50vh;
+}
+
+/* the following is for tour-$'s date-div */
+.tours .tour-2-date{
+    background: url(./Resources/images/tour-2.jpeg) no-repeat center/cover scroll;
+    width: 85vw;
+    height: 50vh;
+}
+
+/* the following is for tour-$'s date-div */
+.tours .tour-3-date{
+    background: url(./Resources/images/tour-3.jpeg) no-repeat center/cover scroll;
+    width: 85vw;
+    height: 50vh;
+}
+
+/* the following is for tour-$'s date-div */
+.tours .tour-4-date{
+    background: url(./Resources/images/tour-4.jpeg) no-repeat center/cover scroll;
+    width: 85vw;
+    height: 50vh;
+}
+
+/* the following is for tour-$'s date */
+.tours h2{
+    font-family: ;
+    background: var(--clr-primary-7);
+    color: rgba(0, 0, 0, 0.568);
+    font-weight: 1;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 8px;
+    width: 166px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.tours h3{
+    font-family: var(--ff-primary);
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.tours h4{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-7);
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.tours p{
+    font-family: var(--ff-primary);
+    color: rgba(0, 0, 0, 0.288);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.tours a{
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    color: rgba(255, 255, 255, 0.945);
+    background: var(--clr-primary-7);
+    border: 2px solid var(--clr-primary-7);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 17px;
+    width: 120px;
+    padding: 15px;
+    margin-top: 5px;
+
+    transition: all 0.5s 0s;
+}
+
+
+/* ?the following styling is to style "tour-$-info" */
+.tour-1-info, 
+.tour-2-info, 
+.tour-3-info, 
+.tour-4-info{
+    width: 85vw;
+    /* width shd be same as tour image at any cost */
+
+    height: 22.5vh;
+    box-sizing: border-box;
+
+    /* the following flex-box is activated to "tour-$-info"'s children with it's parent properly */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.tour-1-info-cont, 
+.tour-2-info-cont, 
+.tour-3-info-cont, 
+.tour-4-info-cont{
+    align-self: flex-end;
+
+    /* why?, to place the length & cost of each trip at bottom-right corner of it's div which is "tour-$-info" */
+
+    margin-top: -10px;
+    margin-right: 1px;
+    /* why? above 2 props?, to shift "tour-$-info-cont" little top within it's parent "tour-$-info" */
+}
+
+.tours h4{
+    padding-top: 30px;
+    /* why?, to crate gap on the top for trip-location */
+}
+
+.tours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* why above flex was activated?, to place all "tour-$" incuding main-heading & anchor-tag at the center of webpage horizontally */
+
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.tour-1, 
+.tour-2, 
+.tour-3, 
+.tour-4{
+    margin: 65px 0px;
+    /* why?, to create gap between each of the tours */
+    
+    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.247);
+    transition: all 0.5s 0s;
+}
+
+/* end of styling */
+
+
+
+
+
+
+/* transition starts */
+
+.tours a:hover{
+    color: var(--clr-primary-7);
+    background: white;
+    border: 2px solid var(--clr-primary-7);
+}
+
+.tour-1:hover, 
+.tour-2:hover, 
+.tour-3:hover, 
+.tour-4:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 6px 10px 3px rgba(0, 0, 0, 0.37);
+}
+
+/* transition ends */
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:750px){
+
+    .tours-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+
+        /* why?, as this query starts, all "tour-$"'s start laigning with flex-direction = row */
+    }
+
+
+    /* ?as u know, that each of the "tour-$" has two child-divs which are "tour-$-date" and "tour-$-info"
+    when i applied width = 40vw for "tour-$" it didn't work, so i applied fot it's children and it worked*/
+    .tours .tour-1-info, 
+    .tours .tour-2-info, 
+    .tours .tour-3-info, 
+    .tours .tour-4-info{
+        width: 40vw;
+    }
+ 
+    .tours .tour-1-date, 
+    .tours .tour-2-date, 
+    .tours .tour-3-date, 
+    .tours .tour-4-date{
+        width: 40vw;
+        height: 30vh;
+    }
+
+    .tour-3, 
+    .tour-4{
+        margin-top: 10px;
+        /* why?, just to adjust gap b/w above-2-tours and below-two-tours */
+    }
+
+}
+
+@media screen and (min-width: 1150px){
+
+    .tours-container{
+        margin-left: 5%;
+        margin-right: 4%;
+        /* just adjusting the margins, so that all the tours will be concentrated in the center without much spacing b/w them */
+    }
+
+    /* ?same as above media query, */
+    .tours .tour-1-info, 
+    .tours .tour-2-info, 
+    .tours .tour-3-info, 
+    .tours .tour-4-info{
+        width: 23vw;
+    }
+ 
+    .tours .tour-1-date, 
+    .tours .tour-2-date, 
+    .tours .tour-3-date, 
+    .tours .tour-4-date{
+        width: 23vw;
+    }
+
+    .tour-3, 
+    .tour-4{
+        margin-top: 65px;
+        /* why?, as we altered it in the previous media query, im re-arranging it */
+    }
+
+    
+
+    /* !below is additional coding, why?
+    go to this link: https://drive.google.com/file/d/19ulsPtaEcSCAmEifSh1ZuzTy7n9QvCBO/view?usp=sharing */
+    
+    .tours-container{
+        justify-content: flex-start;
+    }
+
+    .tour-1, .tour-2, .tour-3{
+        flex-grow: 1;
+
+        /* why below extra props, to give spacing between tours & nothing else */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tour-4{
+        flex: 0 0 30%;
+
+        /* why below extra props, to align properly */
+        margin-left: 1.6%;
+        margin-top: 0px;
+    }
+
+    .tours .tour-1-info, 
+    .tours .tour-2-info, 
+    .tours .tour-3-info,
+    .tours .tour-4-info, 
+    .tours .tour-1-date, 
+    .tours .tour-2-date, 
+    .tours .tour-3-date,
+    .tours .tour-4-date{
+        width: 100%;
+        /* why?, to fill their container i.e., "tour-$" fully  */
+    }
+
+    /* "explore hong kong" was creating issues, so limited all such headings */
+    .tours h3{
+        font-size: 18px;
+        width: 250px;
+    }
+
+}
+
+/* media queries end */

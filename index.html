@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backroads || Tour Company</title>
+
+    <link rel="stylesheet" href="./index.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- including fav-icon for the website -->
+    <link rel="icon" href="./Resources/images/favicon.ico">
+
+</head>
+<body>
+
+    
+    <!-- !?part-1 started -->
+    <!-- !part-1 started -->
+    <!-- !part-1 started -->
+    <!-- !part-1 started -->
+    
+    <div id="home" class="part-1">
+        <div class="hero">
+            <h1>continue exploring</h1>
+            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aut explicabo possimus? Alias, quaerat.</p>
+            
+            <a href="#">explore tours</a>
+        </div>
+    </div>
+
+    <!--!: part-1 ended -->
+    <!--!: part-1 ended -->
+    <!--!: part-1 ended -->
+    <!--?part-1 endeed -->
+    
+    
+    
+    
+    <!-- !?part-2 started -->
+    <!-- !part-2 started -->
+    <!-- !part-2 started -->
+    <!-- !part-2 started -->
+    
+    <div id="about" class="part-2">
+                
+        <div class="about">
+            
+            <h1>about <span>us</span></h1>
+            
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="./Resources/images/about.jpeg" alt="">
+                </div>
+                
+                <div class="about-info">
+                    <h2>explore the difference</h2>
+                    
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet molestias tenetur error enim maxime aliquid placeat cupiditate laudantium accusantium.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur debitis sint cupiditate voluptatem alias officia veniam ipsam vitae? Expedita.</p>
+                    
+                    <a href="#">read more</a>
+                </div>
+            </div>
+            
+            <!-- why separate divs for image & info and then again placed them in a div named about-container?
+                
+                so that i can use flexbox and arrange them row wise -->
+                
+            </div>
+            
+        </div>
+        
+        <!--!: part-2 ended -->
+        <!--!: part-2 ended -->
+        <!--!: part-2 ended -->
+        <!--?part-2 endeed -->
+        
+        
+        
+        
+        <!-- !?part-3 started -->
+        <!-- !part-3 started -->
+        <!-- !part-3 started -->
+        <!-- !part-3 started -->
+        
+    <div id="services" class="part-3">
+            
+<!-- in the following code, each of the three services are placed in a separate div [named "service-1, 2, 3"] & all those divs are placed in a container div named "services-container". why? to use flex & orient them -->
+            
+<!-- also the font-awesome icons are placed in their own div named "i-div", for the same reason of orienting them -->
+
+<!-- and within each service-1, service-2, service-3; there are two divs named "i-div" & "service-$-info" -->
+
+<!-- why again separate div by name "service-$-info" ?
+    because as the viewport-width increases, "service-$" flex-direc will be row-wise, but "service-$-info" flex-direc will be col-wise -->
+    
+    
+    <div class="services">
+        <h1>our <span>services</span></h1>
+        
+        <div class="services-container">
+            
+            
+            <div class="service-1">
+                <div class="i-div">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                
+                <div class="service-1-info">
+                    <h2>saving money</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, quidem!</p> 
+                </div>       
+            </div>
+            
+            
+            <div class="service-2">
+                <div class="i-div">
+                    <i class="fas fa-tree"></i>
+                </div>
+                
+                <div class="service-2-info">
+                    <h2>endless hiking</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, quidem!</p>
+                </div>
+            </div>
+            
+            
+            <div class="service-3">
+                <div class="i-div">
+                    <i class="fas fa-socks"></i>
+                </div>
+                
+                <div class="service-3-info">
+                    <h2>amazing comfort</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, totam.</p>    
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+<!--!: part-3 ended -->
+<!--!: part-3 ended -->
+<!--!: part-3 ended -->
+<!--?part-3 endeed -->
+
+
+
+
+<!-- !?part-4 started -->
+<!-- !part-4 started -->
+<!-- !part-4 started -->
+<!-- !part-4 started -->
+
+<div id="tours" class="part-4">
+    
+<!-- TODO   in the following code has div which is "tours-container", in which there are 4-tours named "tour-1", "tour-2", "tour-3", "tour-4"
+    
+    and in each on those tour-1,2,3,4 there are 2 divs, one is "tour-$-date" & the other is "tour-$-info"
+    
+why? "tour-$-date", the text double background, so created an extra div, so that one bckgrnd will be for div & the other it's content
+
+and in that "tour-$-info", there are some FA-icons, headings and one more last div, which is "tour-$-info-cont" -->
+
+
+<div class="tours">
+    
+    <h1>featured <span>tours</span></h1>
+    
+    
+    <!-- !start of tours-container div -->
+    <div class="tours-container">
+        
+    
+        <div class="tour-1">
+            
+            <div class="tour-1-date">
+                <h2>August 14th, 2021</h2>
+            </div>
+            
+            <div class="tour-1-info">
+                <h3>tibet adventure</h3>
+                
+                <h4><i class="fas fa-map"></i> china</h4>
+                
+                <div class="tour-1-info-cont">
+                    <p>6 days</p>
+                        <p>from $2100</p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- ?end of tour-1 div -->
+            
+            
+            <div class="tour-2">
+                
+                <div class="tour-2-date">
+                    <h2>october 1st, 2021</h2>
+                </div>
+                
+                <div class="tour-2-info">
+                    <h3>best of java</h3>
+                    
+                    <h4><i class="fas fa-map"></i> indonesia</h4>
+                    
+                    <div class="tour-2-info-cont">
+                        <p>10 days</p>
+                        <p>from $4100</p>
+                    </div>
+                    
+                </div>
+    
+            </div>
+            <!-- ?end of tour-2 div -->
+            
+            
+            <div class="tour-3">
+                
+                <div class="tour-3-date">
+                    <h2>september 26th, 2021</h2>
+                </div>
+                
+                <div class="tour-3-info">
+                    <h3>explore hong kong</h3>
+                    
+                    <h4><i class="fas fa-map"></i> hong kong</h4>
+                    
+                    <div class="tour-3-info-cont">
+                        <p>12 days</p>
+                        <p>from $3100</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <!-- ?end of tour-3 div -->
+            
+            
+            <div class="tour-4">
+                
+                <div class="tour-4-date">
+                    <h2>december 5th, 2021</h2>
+                </div>
+    
+                <div class="tour-4-info">
+                    <h3>kenya highlights</h3>
+                    
+                    <h4><i class="fas fa-map"></i> kenya</h4>
+                    
+                    <div class="tour-4-info-cont">
+                        <p>22 days</p>
+                        <p>from $5400</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <!-- ?end of tour-4 div -->
+            
+            
+        </div>
+        <!-- !end of tours-container div -->
+        
+        
+        <a href="#tours">all tours</a>
+        
+        
+    </div>
+    
+</div>
+
+<!--!: part-4 ended -->
+<!--!: part-4 ended -->
+<!--!: part-4 ended -->
+<!--?part-4 endeed -->
+
+
+
+
+<!-- !?part-5 started -->
+<!-- !part-5 started -->
+<!-- !part-5 started -->
+<!-- !part-5 started -->
+
+<div id="gallery" class="part-5">
+        
+    <!-- below is a div by name "images-container" which has 6-child-divs by names "image-$"
+        in each of these 6-child-divs, there is an image-tag & an anchor-tag -->
+        
+        <!-- also worthmentioning that the "images-container" div & main-heading of the section are placed in a separate div by name "images" -->
+        
+        
+        <div class="images">
+            <h1>our <span>gallery</span></h1>
+            
+            <div class="images-container">
+                
+                <div class="image-1">
+                    <img src="./Resources/images/tour-1.jpeg" alt="">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            
+            <div class="image-2">
+                <img src="./Resources/images/tour-2.jpeg" alt="">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            
+            <div class="image-3">
+                <img src="./Resources/images/tour-3.jpeg" alt="">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            
+            <div class="image-4">
+                <img src="./Resources/images/tour-4.jpeg" alt="">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            
+            <div class="image-5">
+                <img src="./Resources/images/tour-5.jpeg" alt="">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            
+            <div class="image-6">
+                <img src="./Resources/images/tour-6.jpeg" alt="">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<!--!: part-5 ended -->
+<!--!: part-5 ended -->
+<!--!: part-5 ended -->
+<!--?part-5 endeed -->
+
+
+
+
+<!-- !?part-6 started -->
+<!-- !part-6 started -->
+<!-- !part-6 started -->
+<!-- !part-6 started -->
+
+<div class="part-6">
+    
+    <div class="contact">
+        
+        <h1>hot <span>deals</span></h1>
+        
+        <div class="contact-container">
+            <form  action="https://formspree.io/f/meqpwojo" method="POST" >
+                
+                <input type="email" name="email" placeholder="your email" id="">
+                
+                <input class="button" type="submit" value="submit" name="" id="">
+                
+            </form>
+        </div>
+        
+    </div>
+    
+</div>
+
+<!--!: part-6 ended -->
+<!--!: part-6 ended -->
+<!--!: part-6 ended -->
+<!--?part-6 endeed -->
+
+
+
+
+<!-- !?part-7 started -->
+<!-- !part-7 started -->
+<!-- !part-7 started -->
+<!-- !part-7 started -->
+
+<div class="part-7">
+        
+    <!-- the following code has three child-divs namely "navigation", "social-media", "copyrights"
+        
+        all these child-divs are placed in a parent-div named "end"
+        
+        also only for the navigation links, a separate-div is arranged inside "naigation"-div which is named as "nav-links-set" -->
+        
+        
+        <div class="end">
+            
+            <div class="navigation">
+                <nav class="nav-links-set">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#services">services</a>
+                    <a href="#tours">featured</a>
+                    <a href="#gallery">gallery</a>
+                </nav>
+            </div>
+            
+            <div class="social-media">
+                <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.squarespace.com/"><i class="fab fa-squarespace"></i></a>
+            </div>
+            
+            <div class="copyrights">
+                <p>copyright &copy; &nbsp; ajay's backroads travel company 2021. &nbsp; all rights reserved</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <!--!: part-7 ended -->
+    <!--!: part-7 ended -->
+    <!--!: part-7 ended -->
+    <!--?part-7 endeed -->
+    
+    
+    
+    
+    <!-- !?part-8 started -->
+    <!-- !part-8 started -->
+    <!-- !part-8 started -->
+    <!-- !part-8 started -->
+    
+    <div class="part-8">
+            
+        <div class="menu">
+    
+            <div class="logo">
+                <img src="./Resources/images/logo.svg" alt="">
+            </div>
+        
+            <div class="navigation">
+                <nav class="nav-links-set">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#services">services</a>
+                    <a href="#tours">featured</a>
+                    <a href="#gallery">gallery</a>
+                </nav>
+            </div>
+        
+            <div class="social-media">
+                <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.squarespace.com/"><i class="fab fa-squarespace"></i></a>
+            </div>
+    
+        </div>
+    
+        </div>
+    
+    <!--!: part-8 ended -->
+    <!--!: part-8 ended -->
+    <!--!: part-8 ended -->
+    <!--?part-8 endeed -->
+
+    <script src="https://kit.fontawesome.com/35a120d2fb.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
